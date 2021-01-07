@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.main {
+    margin: auto;
+    max-width: 900px;
+}
+
+body {
+    color: white;
+}
+
+section h2 {
+    color: yellow;
+}
+
+h1 {
+    display: block;
+    width: 100%;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+}
+
+.float {
+    display: inline-block;
+    width: 200;
+}
+
+.float img {
+    float: right;
+}
