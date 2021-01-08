@@ -1,27 +1,41 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-    <title>Pintcopy</title>
-    <link rel="stylesheet" href="index.css">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madlib v1</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <header>
+        <div class="wrapper">
+            <h1>Madlibs!</h1>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <section>
+                <form id="generateMadlib" action="#" method="POST">
+                    <label>
+                            My name
+                        </label>
+                    <input type="text" name="myName" id="myName" placeholder="What is your name?" />
+                    </label>
+                    My Favorite Subject:
+                    <input type="text" name="mySubject" id="mySubject" placeholder="What is your favorite subject?" />
+                    </label>
+                    <button type="submit">Generate Madlib</button>
 
-    <section class="container">
-
-        <img src="abstract-glitter-background.jpg" class="image">
-        <img src="abstract.jpg" class="image">
-        <img src="backgroundsWP.jpg" class="image">
-        <img src="wallpaper2you_68007.jpg" class="image">
-        <img src="Fall leaves image cropped_0.jpg" class="image">
-        <img src="Deadpool_(2016_poster).png" class="image">
-
-    </section>
-
+                </form>
+            </section>
+            <section>
+                <p>My name is <span id="nameResponse" class="madlib_placeholder"></span>and my favorite subject is <span id="subjectResponse" class="madlib_placeholder"></span>.</p>
+            </section>
+        </div>
+    </main>
 </body>
-
+<script src="js/scripts.js"></script>
 
 </html>
