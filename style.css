@@ -17,16 +17,25 @@ body {
     min-height: 100vh;
 }
 
+h1 {
+    background-color: crimson;
+}
+
+h2 {
+    background-color: whitesmoke;
+}
+
 section {
-    display: block;
-    margin: 16px auto;
+    display: -webkit-inline-flex;
+    margin: 18x auto;
     width: 100%;
+    background-color: aquamarine;
 }
 
 .wrapper {
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    margin: 7px 8px 7px 8px;
     max-width: 960px;
     width: 100%;
 }
@@ -36,5 +45,5 @@ section {
     display: inline-block;
     min-height: 19px;
     min-width: 130px;
-    padding: 1px 4px 2px;
+    padding: 3px 4px 3px;
 }

@@ -1,23 +1,33 @@
 'use strict';
 
 console.log('Scripts Loaded');
-
+// Event Listener
 const generateMadlib = document.querySelector('#generateMadlib');
 
 generateMadlib.addEventListener('submit', function(event) {
     event.preventDefault();
-
+    // Event function
     const inputSelectors = document.querySelectorAll("input");
-    const nameResponse = document.querySelector("#nameResponse");
-    const subjectResponse = document.querySelector("#subjectResponse");
+    const noun = document.querySelector("#nounResponse");
+    const adjective = document.querySelector("#adjectiveResponse");
+    const anotherNoun = document.querySelector("#anotherNounresponse");
+    const place = document.querySelector("#placeResponse");
     inputSelectors.forEach(function(inputItem) {
-        if (inputItem.name === "myName") {
-            nameResponse.innerHTML = inputItem.value;
+
+        if (inputItem.noun === "noun") {
+            nounResponse.innerHTML = inputItem.value;
+        }
+        if (inputItem.adjective === "adjective") {
+            adjectiveResponse.innerHTML = inputItem.value;
+
         }
 
-        if (inputItem.name === "mySubject") {
-            subjectResponse.innerHTML = inputItem.value;
+        if (inputItem.anotherNoun === "anotherNoun") {
+            anotherNounrespose.innerHTML = inputItem.value;
+
+        }
+        if (inputItem.place === "place") {
+            placeResponse.innerHTML = inputItem.value;
         }
     });
-
 })
